@@ -24,8 +24,6 @@ The goals / steps of this project are the following:
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 
-###Histogram of Oriented Gradients (HOG)
-
 #### 1. Creating the dataset
 The training dataset provided for this project by Udacity as set of png images ([vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) and [non-vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) images)
 
