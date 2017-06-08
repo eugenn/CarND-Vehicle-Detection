@@ -8,7 +8,7 @@ import matplotlib.image as mpimg
 import lane.utils as ut
 
 
-def init_all():
+def init_calibrate():
     global mtx, dist, M, M_inv, wrp
 
     # prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(6,5,0)
