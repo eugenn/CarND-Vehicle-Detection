@@ -84,7 +84,7 @@ After that I imported from my previous project algorithm for processing lane lin
 ---
 
 ### 6. Video Implementation
-Here's a [link to my video result](./video_out/project_video_output.mp4) [youtube](https://www.youtube.com/watch?v=8TDtqQk8oBY)
+Here's a [link to my video result](./video_out/project_video_output.mp4) [youtube](https://youtu.be/vq89tnY-ZLA)
 
 
 ---
