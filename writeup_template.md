@@ -66,6 +66,7 @@ The sliding window is the cpu consuming operation therefore need to specify area
 380 - 550, 380 - 600, 380 - 656, 380 - 700 and scale factors: 1.0, 1.5, 2.0, 2.5
 So based on images below I decided keep first 3 ranges with corresponding scale factors.   
 ![alt text][image9]
+
 ### 4. Adding Heatmaps and Bounding Boxes
 The `add_heat` function creates a map of positive "car" results found in an image by adding all the pixels found inside of search boxes. More boxes means more "hot" pixels. The `apply_threshold` function defines how many search boxes have to overlap for the pixels to be counted as "hot", as a result the "false-positve" search boxes can be discarded. The `draw_labeled_bboxes` function takes in the "hot" pixel values from the image and converts them into labels then draws bounding boxes around those labels. Below is an example of these functions at work.
 ![alt text][image7]
