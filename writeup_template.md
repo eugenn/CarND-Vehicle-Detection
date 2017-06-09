@@ -20,6 +20,7 @@ The goals / steps of this project are the following:
 [image71]: ./examples/heat_map1.png
 [image72]: ./examples/heat_map3.png
 [image8]: ./examples/all_together.png
+[image9]: ./examples/window_sizes.png
 [video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -60,6 +61,11 @@ The `slide_window` function takes in an image, start and stop positions, window 
 
 ![alt text][image3]
 
+### 4. Selecting scale and y-axis range.
+The sliding window is the cpu consuming operation therefore need to specify area and quantity of windows which really help to detect cars. So I started search using following y-axis range:
+380 - 550, 380 - 600, 380 - 656, 380 - 700 and scale factors: 1.0, 1.5, 2.0, 2.5
+So based on images below I decided keep first 3 ranges with corresponding scale factors.   
+![alt text][image9]
 ### 4. Adding Heatmaps and Bounding Boxes
 The `add_heat` function creates a map of positive "car" results found in an image by adding all the pixels found inside of search boxes. More boxes means more "hot" pixels. The `apply_threshold` function defines how many search boxes have to overlap for the pixels to be counted as "hot", as a result the "false-positve" search boxes can be discarded. The `draw_labeled_bboxes` function takes in the "hot" pixel values from the image and converts them into labels then draws bounding boxes around those labels. Below is an example of these functions at work.
 ![alt text][image7]
